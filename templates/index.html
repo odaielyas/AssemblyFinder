@@ -1,0 +1,59 @@
+<!-- html code to allow user to upload video into video directory -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assembly Finder</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        height: 100vh;
+        background-color: azure;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      input[type='submit'] {
+        margin-top: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <img src = '/static/img.png' alt = 'Assembly Finder Logo' width = '200' height = '200'>
+    <h1>Assembly Finder</h1>
+    <p>Upload a video to be analyzed</p>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <input type="submit" value="Upload">
+
+    {% if upload_message %}
+    <p>{{ upload_message }}</p>
+    {% endif %}
+
+    </form>
+    <form action='/run' method='post'>
+    <input type='submit' value='Run'>
+    </form>
+
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+
+    <form action='results' metod="post">
+    <input type='submit' value='Results'>
+    </form>
+
+</body>
+</html>
+

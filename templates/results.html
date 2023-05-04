@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assembly Finder Results</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        height: 100vh;
+        background-color: azure;
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      img {
+        margin-bottom: 20px;
+      }
+      
+      h1 {
+        margin-bottom: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Assembly Finder Results</h1>
+      <img src="/static/assembled.jpg" alt="Assembled Parts" width="600" height="400">
+      <p>Assembly occurs at {{ detection_time }} seconds</p>
+      <button onclick="window.location.href='/';">Back</button>
+    </div>
+  </body>
+</html>
