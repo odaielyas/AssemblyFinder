@@ -26,9 +26,10 @@ This project conatains a user interface created using Python Flask, the HTML int
 4. Upload video sample on webpage
 5. Run model on webpage
 6. Display Results
+7. Run stop.py in command line once analysis is complete.
 
 This code was developed as part of the Engineering Computation and Data Science class at MIT for the Spring 2023 semester instructed by Professor John Williams, and Professor Able Sanchez. For further inquiries or feedback please contact Maxwell Kalinowski (mkal@mit.edu)  or Odai Elyas (oaelyas2@mit.edu).
-7. Run stop.py in command line once analysis is complete.
+
 
 
 
